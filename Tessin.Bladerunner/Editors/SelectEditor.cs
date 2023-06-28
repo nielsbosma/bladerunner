@@ -30,7 +30,9 @@ namespace Tessin.Bladerunner.Editors
 
             var options = GetOptions(editorFieldInfo);
 
-            var selectedOption = options.Where(e => Equals(e.Value,value)).Select(e => e.Label).FirstOrDefault();
+            bool isEnum = value?.GetType().IsEnum ?? false;
+
+            var selectedOption = options.Where(e => Equals(e.Value,value) || isEnum && Equals(e.Label,value.ToString())).Select(e => e.Label).FirstOrDefault();
 
             _selectBox = new Controls.SelectBox(options.Select(e => e.Label).ToArray())
             {

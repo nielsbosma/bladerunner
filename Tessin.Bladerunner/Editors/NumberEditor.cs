@@ -9,10 +9,14 @@ namespace Tessin.Bladerunner.Editors
         private Field _field;
         private NumberBox _numberBox;
         private int _decimals;
+        private readonly double _min;
+        private readonly double _max;
 
-        public NumberEditor(int decimals)
+        public NumberEditor(int decimals, double min = 0, double max = double.MaxValue)
         {
             _decimals = decimals;
+            _min = min;
+            _max = max;
         }
 
         public void Update(object value)
@@ -28,7 +32,7 @@ namespace Tessin.Bladerunner.Editors
             object value = editorFieldInfo.GetValue(obj);
             double? initialValue = value == null ? (double?)null : Convert.ToDouble(value);
 
-            _numberBox = new NumberBox(initialValue, _decimals) { };
+            _numberBox = new NumberBox(initialValue, _decimals, min:_min, max:_max) { };
 
             _numberBox.TextInput += (sender, args) => preview();
 

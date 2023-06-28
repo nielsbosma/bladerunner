@@ -1,9 +1,9 @@
 <Query Kind="Program">
-  <Reference>C:\Repos\tessin-bladerunner\Tessin.Bladerunner\bin\Debug\netcoreapp3.1\Tessin.Bladerunner.dll</Reference>
+  <Reference>C:\Repos\bladerunner\Tessin.Bladerunner\bin\Debug\netcoreapp3.1\Tessin.Bladerunner.dll</Reference>
   <Namespace>Tessin.Bladerunner</Namespace>
+  <Namespace>Tessin.Bladerunner.Alerts</Namespace>
   <Namespace>Tessin.Bladerunner.Blades</Namespace>
   <Namespace>Tessin.Bladerunner.Controls</Namespace>
-  <Namespace>Tessin.Bladerunner.Alerts</Namespace>
   <Namespace>Tessin.Bladerunner.Editors</Namespace>
   <IncludeUncapsulator>false</IncludeUncapsulator>
   <RuntimeVersion>5.0</RuntimeVersion>

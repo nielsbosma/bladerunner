@@ -1,5 +1,5 @@
 <Query Kind="Program">
-  <Reference>C:\Repos\tessin-bladerunner\Tessin.Bladerunner\bin\Debug\netcoreapp3.1\Tessin.Bladerunner.dll</Reference>
+  <Reference>C:\Repos\bladerunner\Tessin.Bladerunner\bin\Debug\netcoreapp3.1\Tessin.Bladerunner.dll</Reference>
   <Namespace>LINQPad.Controls</Namespace>
   <Namespace>System.Drawing</Namespace>
   <Namespace>System.Threading.Tasks</Namespace>
@@ -84,6 +84,7 @@ void Main()
 			var record = new NumberRecord();
 
 			var editor = Scaffold.Editor(record, (_) => { })
+				.Editor(e => e.IntNegative, e => e.Number(0, int.MinValue))
 				.Render();
 
 			manager.OpenSideBlade(new DisplayBlade(editor), title: "Number");
@@ -114,6 +115,19 @@ void Main()
 			.Render();
 
 			manager.OpenSideBlade(new DisplayBlade(editor), title: "Date");
+		}),
+		new ActionNode("Enum", () =>
+		{
+			var record = new EnumRecord();
+
+			var editor = Scaffold.Editor(record, (_) =>
+			{
+				manager.ShowToaster(record);
+			})
+			.Editor(e => e.Choice, e => e.Select(typeof(MyEnum), typeof(int)))
+			.Render();
+
+			manager.OpenSideBlade(new DisplayBlade(editor), title: "Enum");
 		})
 	))
 	, "Editors");
@@ -163,6 +177,7 @@ public class NumberRecord
 {
 	public int Int { get; set; }
 	public int? IntNullable { get; set; } = null;
+	public int IntNegative {get; set; }
 	public double Double { get; set; }
 	public double? DoubleNullable { get; set; } = null;
 	public decimal Decimal { get; set; }
@@ -173,7 +188,17 @@ public class NumberRecord
 	public decimal Test2 { get; set; } = 0.07m;
 }
 
+public enum MyEnum
+{
+	Red = 1,
+	Blue = 2,
+	Green = 3
+}
 
+public class EnumRecord
+{
+	public MyEnum Choice { get; set; } = MyEnum.Blue;
+}
 
 
 
