@@ -1,5 +1,5 @@
 <Query Kind="Program">
-  <Reference>C:\Repos\tessin-bladerunner\Tessin.Bladerunner\bin\Debug\netcoreapp3.1\Tessin.Bladerunner.dll</Reference>
+  <Reference Relative="..\..\bin\Debug\netcoreapp3.1\Tessin.Bladerunner.dll">D:\Repos\_Tessin\bladerunner\Tessin.Bladerunner\bin\Debug\netcoreapp3.1\Tessin.Bladerunner.dll</Reference>
   <Namespace>System.Threading.Tasks</Namespace>
   <Namespace>Tessin.Bladerunner</Namespace>
   <Namespace>Tessin.Bladerunner.Blades</Namespace>
