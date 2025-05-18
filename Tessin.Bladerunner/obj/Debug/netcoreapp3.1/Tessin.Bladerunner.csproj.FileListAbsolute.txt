@@ -1,0 +1,15 @@
+C:\Repos\bladerunner\Tessin.Bladerunner\bin\Debug\netcoreapp3.1\Tessin.Bladerunner.deps.json
+C:\Repos\bladerunner\Tessin.Bladerunner\bin\Debug\netcoreapp3.1\Tessin.Bladerunner.dll
+C:\Repos\bladerunner\Tessin.Bladerunner\bin\Debug\netcoreapp3.1\Tessin.Bladerunner.pdb
+C:\Repos\bladerunner\Tessin.Bladerunner\obj\Debug\netcoreapp3.1\Tessin.Bladerunner.csproj.AssemblyReference.cache
+C:\Repos\bladerunner\Tessin.Bladerunner\obj\Debug\netcoreapp3.1\Tessin.Bladerunner.Icons.resources
+C:\Repos\bladerunner\Tessin.Bladerunner\obj\Debug\netcoreapp3.1\Tessin.Bladerunner.Javascript.resources
+C:\Repos\bladerunner\Tessin.Bladerunner\obj\Debug\netcoreapp3.1\Tessin.Bladerunner.Svg.SvgScripts.resources
+C:\Repos\bladerunner\Tessin.Bladerunner\obj\Debug\netcoreapp3.1\Tessin.Bladerunner.Themes.Themes.resources
+C:\Repos\bladerunner\Tessin.Bladerunner\obj\Debug\netcoreapp3.1\Tessin.Bladerunner.csproj.GenerateResource.cache
+C:\Repos\bladerunner\Tessin.Bladerunner\obj\Debug\netcoreapp3.1\Tessin.Bladerunner.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repos\bladerunner\Tessin.Bladerunner\obj\Debug\netcoreapp3.1\Tessin.Bladerunner.AssemblyInfoInputs.cache
+C:\Repos\bladerunner\Tessin.Bladerunner\obj\Debug\netcoreapp3.1\Tessin.Bladerunner.AssemblyInfo.cs
+C:\Repos\bladerunner\Tessin.Bladerunner\obj\Debug\netcoreapp3.1\Tessin.Bladerunner.csproj.CoreCompileInputs.cache
+C:\Repos\bladerunner\Tessin.Bladerunner\obj\Debug\netcoreapp3.1\Tessin.Bladerunner.dll
+C:\Repos\bladerunner\Tessin.Bladerunner\obj\Debug\netcoreapp3.1\Tessin.Bladerunner.pdb
