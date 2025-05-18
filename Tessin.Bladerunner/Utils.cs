@@ -57,7 +57,6 @@ namespace Tessin.Bladerunner
                 default:
                     return 0;
             }
-
         }
 
         public static bool IsNumeric(this Type type)
